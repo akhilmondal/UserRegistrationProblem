@@ -15,6 +15,7 @@ public class UserRegistrationMain {
         int want;
         do {
             System.out.println("Press 1 to Check your first name is valid or not. \n Press 2 to Check your last name is valid or not");
+            System.out.println("Press 3 to Check your Email Id is valid or not");
             choose = sc.nextInt();
             switch (choose) {
                 case 1:
@@ -23,6 +24,8 @@ public class UserRegistrationMain {
                 case 2:
                     operations.validLastName();
                     break;
+                case 3:
+                    operations.validEmailId();
                 default:
                     System.out.println("enter valid input");
                     break;
